@@ -39,7 +39,7 @@ const fetchSimilars = async (showTvId) => {
 
 const fetchSringSearch = async (string) => {
     try {
-        const endpoint = "srch/tv?query=" + string;
+        const endpoint = "search/tv?query=" + string;
         const foundTvShow = await getJson(endpoint);
         return foundTvShow.results;
         
