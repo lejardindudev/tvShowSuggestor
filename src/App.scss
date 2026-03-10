@@ -1,0 +1,76 @@
+// Variables
+// Viewports
+$tablet:550px;
+$laptop:900px;
+$desktop:1200px;
+$widescreen:1900px;
+
+//mixins
+@mixin fillAllScreen {
+    position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+}
+
+// Layouts
+.Wrapper{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    &::before{
+        content:"";
+        @include fillAllScreen;
+        background-color: rgba(21, 28, 35, 0.837);
+        z-index:1;
+    }
+    &-img{
+        @include fillAllScreen;
+        object-fit:cover;
+        
+    }
+    &-header{
+        z-index:5;
+    }
+    &-content{
+        position:relative;
+        z-index:4;
+    }
+    &-footer{
+        margin-top:auto;
+        margin-bottom:1em;
+        position:relative;
+        z-index:4;
+    }
+}
+.layout{
+    width:95%;
+    max-width:1200px;
+    margin-inline:auto; 
+}
+// Sections
+.Header{
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:50px;
+    @media screen AND (min-width:$laptop){
+        flex-direction:row;
+    }
+    &-search{
+        position:absolute;
+        left:50%;
+        bottom:0;
+        transform:translate(-50%);
+         @media screen AND (min-width:$laptop){
+            bottom:auto;
+        }
+    }
+}
+.Content{
+    margin-top:3em;
+}

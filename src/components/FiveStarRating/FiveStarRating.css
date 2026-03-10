@@ -1,0 +1,15 @@
+.Rating {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Rating-stars {
+  width: 60px;
+  display: flex;
+}
+.Rating-stars-star {
+  fill: white;
+}
+.Rating-vote {
+  font-weight: bold;
+}/*# sourceMappingURL=FiveStarRating.css.map */

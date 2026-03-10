@@ -1,0 +1,22 @@
+.Search {
+  width: 100%;
+  max-width: 500px;
+}
+.Search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.Search-form-label {
+  position: absolute;
+  width: 25px;
+  left: 10px;
+  z-index: 2;
+}
+.Search-form-input {
+  flex-grow: 1;
+  height: 2em;
+  padding: 0.3em;
+  padding-left: 4em;
+  border-radius: 500px;
+}/*# sourceMappingURL=Search.css.map */

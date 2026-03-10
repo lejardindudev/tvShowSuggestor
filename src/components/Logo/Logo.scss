@@ -1,0 +1,12 @@
+.Logo{
+    max-width:250px;
+    margin:0;
+    &-img{
+        width:100%;
+        max-width:80px;
+    }
+    &-baseline{
+        font-family: "Carter One",sans-serif ;
+        font-size:.7em;
+    }
+}

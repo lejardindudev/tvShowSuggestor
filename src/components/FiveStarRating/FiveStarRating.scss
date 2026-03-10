@@ -1,0 +1,16 @@
+.Rating{
+    display:flex;
+    align-items: center;
+    gap:20px;
+    &-stars{
+        width:60px;
+        display:flex;
+        &-star{
+            fill:white;
+
+        }
+    }
+    &-vote{
+        font-weight:bold;
+    }
+}

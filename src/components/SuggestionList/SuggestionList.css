@@ -1,0 +1,8 @@
+.SuggestionList-list {
+  box-sizing: border-box;
+  padding: 0.8em;
+  width: 100vw;
+  overflow-x: auto;
+  display: flex;
+  gap: 3em;
+}/*# sourceMappingURL=SuggestionList.css.map */
